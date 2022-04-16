@@ -16,10 +16,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 37.5em) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 8.5rem;
+    }
 }
 
 .content {
     display: flex;
+    @media only screen and (max-width: 50em) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -28,6 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .hotel-view {
@@ -46,6 +56,9 @@
     border-bottom: var(--line);
     font-family: inherit;
     
+    @media only screen and (max-width: 50em) {
+        flex-direction: column;
+    }
 }
 
 .description {
@@ -63,4 +76,17 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
+
+    @media only screen and (max-width: 50em) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 100%;
+        margin-top: 2rem;
+        margin-right: 4.5rem;
+        padding: 2.9rem;
+
+
+    }
 }
